@@ -129,3 +129,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 CART_SESSION_ID = 'cart'
 
+# Put email in the console not to send 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
