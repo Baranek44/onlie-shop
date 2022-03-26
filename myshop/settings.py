@@ -130,6 +130,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 CART_SESSION_ID = 'cart'
 
+# This is the project's path where static files reside
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
 # Put email in the console not to send 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
@@ -149,4 +152,5 @@ BRAINTREE_CONF = braintree.Configuration(
     BRAINTREE_PUBLIC_KEY,
     BRAINTREE_PRIVATE_KEY
 )
+
 
