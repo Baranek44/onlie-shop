@@ -1,7 +1,7 @@
 from io import BytesIO
 from celery import task
 import weasyprint
-from django.template.loader import import render_to_string
+from django.template.loader import render_to_string
 from django.core.mail import EmailMessage
 from django.conf import settings
 from orders.models import Order
@@ -31,8 +31,8 @@ def payment_completed(order_id):
         out,
         stylesheets=stylesheets)
     # Attach PDF file
-    email.attach(f'order_{order.id}.pdf
-        put.getvalues(),
+    email.attach(f'order_{order.id}.pdf',
+        out.getvalues(),
         'application/pdf')
     # Send email
     email.send()
