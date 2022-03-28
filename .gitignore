@@ -1,6 +1,8 @@
 !/.gitignore
 __pycache__/
+*.py[cod]
 media
 freeze
 static
 .env
+db.sqlite3
