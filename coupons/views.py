@@ -1,19 +1,23 @@
 from django.shortcuts import render, redirect
-from djagno.utils import timezone
+from django.utils import timezone
 from django.views.decorators.http import require_POST
 from .models import Coupon
-from .forms import CouponApllyForm
+from .forms import CouponApplyForm
 
-# Create your views here.
+"""
+The coupon_apply view validates the coupon and stores it in the user's session
+require_POST decorator to this view to restrict it to POST requests
+"""
 @require_POST
 def coupon_apply(request):
     now = timezone.now()
+    # Using the posted data and check that the form is valid
     form = CouponApplyForm(request.POST)
     if form.is_valid():
-        code = form.objects.get['code']
+        code = form.cleaned_data['code']
         try:
             coupon = Coupon.objects.get(
-                code_iexact=code,
+                code__iexact=code,
                 valid_from__lte=now,
                 valid_to__gte=now,
                 active=True)
