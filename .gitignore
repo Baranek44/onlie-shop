@@ -6,6 +6,6 @@ freeze
 static
 .env
 db.sqlite3
-
-myshop/__pycache__
 cart/__pycache__
+myshop/__pycache__
+db.sqlite3
