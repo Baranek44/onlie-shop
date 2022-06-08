@@ -20,6 +20,9 @@ from django.conf.urls.static import static
 from django.conf.urls.i18n import i18n_patterns
 from django.utils.translation import gettext_lazy as _
 
+from django.views.static import serve
+from django.conf.urls import url
+
 urlpatterns = i18n_patterns(
     path(_('admin/'), admin.site.urls),
     path(_('cart/'), include('cart.urls', namespace='cart')),
@@ -28,6 +31,8 @@ urlpatterns = i18n_patterns(
     path(_('coupons/'), include('coupons.urls', namespace='coupons')),
     path('rosetta/', include('rosetta.urls')),
     path('', include('shop.urls', namespace='shop')),
+    url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
+    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
 )
 
 if settings.DEBUG:

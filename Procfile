@@ -1,1 +1,1 @@
-web gunicorn myshop.wsgi:aplication --log-file -
+web gunicorn CCMS.wsgi --log-file -
