@@ -3,7 +3,6 @@ __pycache__/
 *.py[cod]
 media
 freeze
-static
 .env
 db.sqlite3
 cart/__pycache__
