@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-30 07:02+0200\n"
+"PO-Revision-Date: 2022-03-29 17:00+0000\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n"
+"%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
+"%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: .\orders\models.py:11
+msgid "first name"
+msgstr "imię"
+
+#: .\orders\models.py:12
+msgid "last name"
+msgstr "nazwisko"
+
+#: .\orders\models.py:13
+msgid "city"
+msgstr "miasto"
+
+#: .\orders\models.py:14
+msgid "address"
+msgstr "miejsce zamieszkania"
+
+#: .\orders\models.py:15
+msgid "e-mail"
+msgstr "e-mail"
+
+#: .\orders\models.py:16
+msgid "postal code"
+msgstr "kod pocztowy"
+
+#: .\orders\templates\orders\order\create.html:5
+#: .\orders\templates\orders\order\create.html:8
+msgid "Checkout"
+msgstr "Wypłać"
+
+#: .\orders\templates\orders\order\create.html:10
+msgid "Your order"
+msgstr "Twoje zamówienie"
+
+#: .\orders\templates\orders\order\create.html:20
+#, python-format
+msgid ""
+"\n"
+"            \"%(code)s\" (%(discount)s%% off)\n"
+"          "
+msgstr ""
+
+#: .\orders\templates\orders\order\create.html:27
+msgid "Total"
+msgstr "Wszystko"
+
+#: .\orders\templates\orders\order\create.html:31
+msgid "Place order"
+msgstr ""
+
+#: .\orders\templates\orders\order\created.html:9
+msgid "Thank you"
+msgstr "Dziękujemy"
+
+#: .\orders\urls.py:8
+msgid "create/"
+msgstr ""
