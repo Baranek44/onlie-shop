@@ -107,6 +107,7 @@ python-dotenv==0.12.0
 pyttsx3==2.90
 pytz==2022.1
 pywinpty==2.0.5
+PyYAML==6.0
 pyzmq==23.0.0
 qtconsole==5.3.0
 QtPy==2.1.0
@@ -123,6 +124,7 @@ terminado==0.15.0
 tinycss2==1.1.1
 tornado==6.1
 traitlets==5.2.1.post0
+turtle==0.0.1
 tzdata==2021.5
 Unipath==1.0
 urllib3==1.26.9
